@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="registro_de_usuarios">REGISTRO DE USUARIOS</string>
+    <string name="id_hint">ID</string>
+    <string name="nombre_hint">Nombre</string>
+    <string name="telefono_hint">Teléfono</string>
+    <string name="registrar_usuario">Registrar Usuario</string>
+</resources>
