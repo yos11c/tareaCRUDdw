@@ -1,6 +1,8 @@
 package com.example.myapplicationcrud.entidades;
 
-public class Usuario {
+import java.io.Serializable;
+
+public class Usuario implements Serializable {
 
     private Integer id;
     private String nombre;
@@ -10,6 +12,10 @@ public class Usuario {
         this.id = id;
         this.nombre = nombre;
         this.telefono = telefono;
+    }
+
+    public Usuario() {
+
     }
 
     public Integer getId() {

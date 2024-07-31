@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     package="com.example.myapplicationcrud">
 
     <application
@@ -9,7 +10,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.example.myapplicationcrud.MainActivity"
+            android:name=".MainActivity"
             android:exported="true"
             tools:ignore="IntentFilterExportedReceiver">
             <intent-filter>
@@ -19,8 +20,22 @@
         </activity>
 
         <activity
-            android:name="com.example.myapplicationcrud.RegistroUsuariosActivity"
+            android:name=".RegistroUsuarioActivity"
             android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".ConsultarUsuariosActivity"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".ConsultarListaListViewActivity"
+            android:exported="false">
+        </activity>
+
+        <activity android:name=".DetalleUsuarioActivity">
+
         </activity>
 
     </application>

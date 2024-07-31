@@ -1,8 +1,11 @@
 package com.example.myapplicationcrud;
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
-
+import android.widget.Toast;
+import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        com.example.myapplicationcrud.ConexionSQLiteHelper conn = new com.example.myapplicationcrud.ConexionSQLiteHelper(this, "bd_usuarios", null, 1);
+        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this, "bd_usuarios", null, 1);
 
 
     }
@@ -20,7 +23,29 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         Intent intent = null;
 
-        intent = new Intent(MainActivity.this, RegistroUsuariosActivity.class);
+        intent = new Intent(MainActivity.this, RegistroUsuarioActivity.class);
+
+
+        if (intent != null) {
+            startActivity(intent);
+        }
+    }
+
+    public void onClick2(View view) {
+        Intent intent = null;
+
+
+        intent = new Intent(MainActivity.this, ConsultarUsuariosActivity.class);
+
+        if (intent != null) {
+            startActivity(intent);
+        }
+    }
+    public void onClick3(View view) {
+        Intent intent = null;
+
+
+        intent = new Intent(MainActivity.this, ConsultarListaListViewActivity.class);
 
         if (intent != null) {
             startActivity(intent);
