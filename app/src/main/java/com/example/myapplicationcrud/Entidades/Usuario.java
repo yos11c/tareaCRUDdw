@@ -1,4 +1,4 @@
-package com.example.myapplicationcrud.entidades;
+package com.example.myapplicationcrud.Entidades;
 
 import java.io.Serializable;
 

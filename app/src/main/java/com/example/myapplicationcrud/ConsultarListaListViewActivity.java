@@ -8,14 +8,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 
-import com.example.myapplicationcrud.entidades.Usuario;
+import com.example.myapplicationcrud.Entidades.Usuario;
 import com.example.myapplicationcrud.utilidades.Utilidades;
 
 public class ConsultarListaListViewActivity extends AppCompatActivity {
@@ -55,7 +54,7 @@ public class ConsultarListaListViewActivity extends AppCompatActivity {
                     Intent intent = new Intent(ConsultarListaListViewActivity.this, DetalleUsuarioActivity.class);
 
                     Bundle bundle = new Bundle();
-                    bundle.putSerializable("usuario", user);
+                    bundle.putSerializable("usuario", (Serializable) user);
 
                     intent.putExtras(bundle);
                     startActivity(intent);
